@@ -9,9 +9,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ant.gulimall</groupId>
     <artifactId>mall-product</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>mall-product</name>
     <description>商品服务</description>
 
@@ -24,6 +23,12 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.ant.gulimall</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
