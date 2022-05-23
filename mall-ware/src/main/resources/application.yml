@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.112:3307/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+
+mybatis-plus:
+  #  告诉mybatis-plus映射文件在哪里
+  mapper-locations: classpath:/mapper/**/*.xml
+  # 设置主键自增
+  global-config:
+    db-config:
+      id-type: auto
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
